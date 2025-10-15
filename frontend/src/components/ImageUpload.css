@@ -1,0 +1,236 @@
+.app-root {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%);
+}
+
+.app-bar {
+  background: linear-gradient(135deg, #2e7d32 0%, #388e3c 100%) !important;
+  padding: 8px 0;
+}
+
+.app-title {
+  font-weight: 700 !important;
+  font-size: 1.5rem !important;
+  color: white !important;
+}
+
+.app-subtitle {
+  color: rgba(255, 255, 255, 0.9) !important;
+  font-size: 0.9rem !important;
+}
+
+.main-container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.header-section {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.header-title {
+  font-size: 2.5rem !important;
+  font-weight: 700 !important;
+  color: #1b5e20 !important;
+  margin-bottom: 12px !important;
+}
+
+.header-desc {
+  font-size: 1.1rem !important;
+  color: #558b2f !important;
+  max-width: 600px;
+  margin: 0 auto !important;
+}
+
+.image-card {
+  border-radius: 16px !important;
+  background-color: #fff !important;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12) !important;
+  overflow: hidden;
+  transition: all 0.3s ease !important;
+}
+
+.image-card:hover {
+  box-shadow: 0 12px 48px rgba(0, 0, 0, 0.18) !important;
+}
+
+.dropzone-container {
+  padding: 40px 20px;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dropzone {
+  width: 100%;
+  min-height: 350px;
+  border: 3px dashed #4caf50;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: #f1f8e9;
+  padding: 40px;
+}
+
+.dropzone:hover,
+.dropzone.active {
+  border-color: #2e7d32;
+  background-color: #e8f5e9;
+  transform: scale(1.02);
+}
+
+.upload-icon {
+  font-size: 80px !important;
+  color: #4caf50 !important;
+  margin-bottom: 20px;
+}
+
+.dropzone-text {
+  color: #2e7d32 !important;
+  font-weight: 600 !important;
+  margin-bottom: 8px !important;
+}
+
+.dropzone-subtext {
+  color: #558b2f !important;
+}
+
+.image-preview {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.image-preview img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.loading-container {
+  padding: 80px 20px !important;
+  text-align: center;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.loader {
+  color: #2e7d32 !important;
+}
+
+.loading-text {
+  margin-top: 20px !important;
+  color: #2e7d32 !important;
+  font-weight: 600 !important;
+}
+
+.results-card {
+  background: linear-gradient(135deg, #ffffff 0%, #f1f8e9 100%) !important;
+  border-radius: 16px !important;
+  padding: 32px !important;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12) !important;
+}
+
+.result-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+  gap: 12px;
+}
+
+.icon-success {
+  color: #4caf50 !important;
+  font-size: 2rem !important;
+}
+
+.result-title {
+  font-weight: 700 !important;
+  color: #2e7d32 !important;
+}
+
+.result-box {
+  text-align: center;
+  padding: 16px;
+}
+
+.result-label {
+  color: #558b2f !important;
+  margin-bottom: 12px !important;
+  font-weight: 600 !important;
+}
+
+.class-label {
+  display: inline-block;
+  padding: 12px 24px;
+  border-radius: 8px;
+  background: #e8f5e9;
+  color: #1b5e20;
+  font-weight: 700;
+  font-size: 1.3rem;
+  border: 2px solid #4caf50;
+}
+
+.confidence-badge {
+  display: inline-block;
+  padding: 12px 24px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #4caf50 0%, #66bb6a 100%);
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.3rem;
+  box-shadow: 0 4px 12px rgba(76, 175, 80, 0.3);
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 32px;
+}
+
+.clear-button {
+  background: #2e7d32 !important;
+  color: #fff !important;
+  padding: 12px 32px !important;
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  border-radius: 8px !important;
+  text-transform: none !important;
+  box-shadow: 0 4px 12px rgba(46, 125, 50, 0.3) !important;
+}
+
+.clear-button:hover {
+  background: #1b5e20 !important;
+  box-shadow: 0 6px 16px rgba(46, 125, 50, 0.4) !important;
+}
+
+@media (max-width: 600px) {
+  .header-title {
+    font-size: 2rem !important;
+  }
+
+  .header-desc {
+    font-size: 1rem !important;
+  }
+
+  .dropzone {
+    min-height: 280px;
+    padding: 20px;
+  }
+
+  .upload-icon {
+    font-size: 60px !important;
+  }
+}
